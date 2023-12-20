@@ -73,8 +73,8 @@ function App() {
               <SiAwslambda className='text-orange-500'/>
               <SiAmazonrds className='text-violet-500'/>
             </div>
-            <div className='w-full h-12 px-4 flex items-center justify-center'>
-              <button className='text-lg text-white rounded-full bg-blue-500 px-10 lg:px-24 flex items-center justify-center gap-6 py-2'>Deployed url <FaArrowRightLong/></button>
+            <div className='w-full h-12 px-4 flex items-center justify-end'>
+              <button className='text-lg text-white rounded-lg bg-blue-500 px-10 lg:px-12 flex items-center justify-center gap-6 py-2'>Deployed url <FaArrowRightLong/></button>
             </div>
           </div>
           <div className='w-full h-fit border-2 border-gray-100 p-4 rounded-lg mb-4'>
@@ -96,8 +96,8 @@ function App() {
               <SiAwslambda className='text-orange-500'/>
               <SiAmazonrds className='text-violet-500'/>
             </div>
-            <div className='w-full h-12 px-4 flex items-center justify-center'>
-              <button className='text-lg text-white rounded-full bg-blue-500 px-10 lg:px-24 flex items-center justify-center gap-6 py-2'>Deployed url <FaArrowRightLong/></button>
+            <div className='w-full h-12 px-4 flex items-center justify-end'>
+              <button className='text-lg text-white rounded-lg bg-blue-500 px-10 lg:px-12 flex items-center justify-center gap-6 py-2'>Deployed url <FaArrowRightLong/></button>
             </div>
           </div>
         </div>
