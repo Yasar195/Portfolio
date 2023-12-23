@@ -8,7 +8,7 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { SiExpress } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { IoMdSend } from "react-icons/io";
-import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
+// import { LocomotiveScrollProvider } from 'react-locomotive-scrol
 
 function App() {
 
@@ -22,8 +22,8 @@ function App() {
               <p className='text-xl text-gray-500'>🚀 Hi, I'm yasar arafath—a tech enthusiast and software engineer. From lines of code to innovative solutions, I'm on a mission to blend creativity with technology. With expertise in front end, backend and databases, I bring a dynamic approach to problem-solving and a passion for turning ideas into reality. Let's build something amazing together!</p>
               <p className='text-xl text-blue-500'>Lets Connect 🚀!</p>
               <div className='w-full h-16 flex gap-6'>
-                <FaLinkedin/>
-                <FaSquareXTwitter/>
+                <a href='https://www.linkedin.com/in/yasararafathdev/' target='blank'><FaLinkedin/></a>
+                <a href='https://twitter.com/Yasararafathdev' target='blank'><FaSquareXTwitter/></a>
               </div>
             </div>
           </div>
@@ -45,7 +45,7 @@ function App() {
             <FaAws className='text-yellow-700'/>
           </div>
         </div>
-        <div className="w-full h-fit flex items-center justify-center">
+        <div id="projects" className="w-full h-fit flex items-center justify-center">
           <div className='w-5/6 lg:w-3/4 h-3/4'>
             <div className='w-full h-12 text-blue-600 flex items-center justify-start gap-6'>
               <FaArrowCircleRight/>
@@ -72,7 +72,7 @@ function App() {
                 <SiAmazonrds className='text-violet-500'/>
               </div>
               <div className='w-full h-12 px-4 flex items-center justify-end'>
-                <button className='text-lg text-white rounded-lg bg-blue-500 px-10 lg:px-12 flex items-center justify-center gap-6 py-2'>Deployed url <FaArrowRightLong/></button>
+                <a href='https://easy-auth.vercel.app/' target='blank'><button className='text-lg text-white rounded-lg bg-blue-500 px-10 lg:px-12 flex items-center justify-center gap-6 py-2'>Deployed url <FaArrowRightLong/></button></a>
               </div>
             </div>
             <div className='w-full h-fit border-2 border-gray-100 p-4 rounded-lg mb-4'>
@@ -83,24 +83,20 @@ function App() {
                 </div>
               </div>
               <div className='w-full h-fit px-4 pb-4 text-xl text-gray-500'>
-                <p>Easy auth or Easy authentication/authorization is saas service aimed at developers who are finding it difficult to integrate jwt authentication in their projects.</p>
+                <p>Spot is a realtime data sharing platform. it works using webrtc protocoal which is fully peer to peer network.</p>
               </div>
               <div className='invisible md:visible w-full h-12 px-4 flex items-center justify-start text-lg gap-6 mb-4'>
                 <h1>Technologies:-</h1>
                 <FaReact className='text-blue-500'/>
                 <FaNodeJs className='text-green-500'/>
-                <BiLogoPostgresql className='text-blue-900'/>
-                <SiAwsamplify className='text-red-700'/>
-                <SiAwslambda className='text-orange-500'/>
-                <SiAmazonrds className='text-violet-500'/>
               </div>
               <div className='w-full h-12 px-4 flex items-center justify-end'>
-                <button className='text-lg text-white rounded-lg bg-blue-500 px-10 lg:px-12 flex items-center justify-center gap-6 py-2'>Deployed url <FaArrowRightLong/></button>
+                <a href='https://spoted.online/' target='blank'><button className='text-lg text-white rounded-lg bg-blue-500 px-10 lg:px-12 flex items-center justify-center gap-6 py-2'>Deployed url <FaArrowRightLong/></button></a>
               </div>
             </div>
           </div>
         </div>  
-        <div className="w-full h-fit md:h-full flex items-center justify-center">
+        <div id="contact" className="w-full h-fit md:h-full flex items-center justify-center">
           <div className='w-5/6 lg:w-3/4 h-3/4'>
               <div className='w-full h-12 text-blue-600 flex items-center justify-start gap-6'>
                 <FaArrowCircleRight/>
@@ -117,7 +113,7 @@ function App() {
               </div>
             </div>
         </div>
-        <div className="w-full h-fit flex items-center justify-center">
+        <div id="about" className="w-full h-fit flex items-center justify-center">
           <div className='w-5/6 lg:w-3/4 h-3/4'>
             <div className='w-full h-12 text-blue-600 flex items-center justify-start gap-6'>
               <FaArrowCircleRight/>
