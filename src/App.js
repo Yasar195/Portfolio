@@ -69,11 +69,11 @@ function App() {
     <div className="relative w-full h-screen bg-white px-2 lg:px-6">
         <Nav/>
         <div className="w-full h-fit md:h-full flex flex-col items-center justify-center gap-6">
-          <div className='w-3/4 h-2/4 flex flex-col lg:flex-row p-6'>
+          <div className='w-3/4 h-2/4 flex flex-col lg:flex-row p-2 lg:p-6'>
             <div className='w-full h-full flex justify-center flex-col gap-6'>
               <h1 className='lg:text-7xl text-4xl'>Full Stack Web developer</h1>
-              <p className='text-xl text-gray-500'>🚀 Hi, I'm yasar arafath—a tech enthusiast and software engineer. From lines of code to innovative solutions, I'm on a mission to blend creativity with technology. With expertise in front end, backend and databases, I bring a dynamic approach to problem-solving and a passion for turning ideas into reality. Let's build something amazing together!</p>
-              <p className='text-xl text-blue-500'>Lets Connect 🚀!</p>
+              <p className='text-xl text-secondarytext'>🚀 Hi, I'm yasar arafath—a tech enthusiast and software engineer. From lines of code to innovative solutions, I'm on a mission to blend creativity with technology. With expertise in front end, backend and databases, I bring a dynamic approach to problem-solving and a passion for turning ideas into reality. Let's build something amazing together!</p>
+              <p className='text-xl text-glossyblue'>Lets Connect 🚀!</p>
               <div className='w-full h-16 flex gap-6'>
                 <a href='https://www.linkedin.com/in/yasararafathdev/' target='blank'><FaLinkedin/></a>
                 <a href='https://twitter.com/Yasararafathdev' target='blank'><FaSquareXTwitter/></a>
@@ -101,7 +101,7 @@ function App() {
         </div>
         <div id="projects" className="w-full h-fit flex items-center justify-center">
           <div className='w-5/6 lg:w-3/4 h-3/4'>
-            <div className='w-full h-12 text-blue-600 flex items-center justify-start gap-6'>
+            <div className='w-full h-12 text-glossyblue flex items-center justify-start gap-6'>
               <FaArrowCircleRight/>
               <h1>Projects</h1>
             </div>
@@ -113,7 +113,7 @@ function App() {
                   <h1>Easy Auth</h1>
                 </div>
               </div>
-              <div className='w-full h-fit px-4 pb-4 text-xl text-gray-500'>
+              <div className='w-full h-fit px-4 pb-4 text-xl text-secondarytext'>
                 <p>Easy auth or Easy authentication/authorization is saas service aimed at developers who are finding it difficult to integrate jwt authentication in their projects.</p>
               </div>
               <div className='invisible md:visible w-full h-12 px-4 flex items-center justify-start text-xl gap-6 mb-4'>
@@ -125,8 +125,8 @@ function App() {
                 <SiAwslambda className='text-orange-500'/>
                 <SiAmazonrds className='text-violet-500'/>
               </div>
-              <div className='w-full h-12 px-4 flex items-center justify-end'>
-                <a href='https://easy-auth.vercel.app/' target='blank'><button className='text-lg text-white rounded-lg bg-blue-500 px-10 lg:px-12 flex items-center justify-center gap-6 py-2'>Deployed url <FaArrowRightLong/></button></a>
+              <div className='w-full h-12 px-4 flex items-center justify-center lg:justify-end'>
+                <a href='https://easy-auth.vercel.app/' target='blank'><button className='text-lg text-white rounded-lg bg-glossyblue px-10 lg:px-12 flex items-center justify-center gap-6 py-2'>Deployed url <FaArrowRightLong/></button></a>
               </div>
             </div>
             <div className='w-full h-fit border-2 border-gray-100 p-4 rounded-lg mb-4'>
@@ -136,7 +136,7 @@ function App() {
                   <h1>Spot - A peer to peer data transfer system</h1>
                 </div>
               </div>
-              <div className='w-full h-fit px-4 pb-4 text-xl text-gray-500'>
+              <div className='w-full h-fit px-4 pb-4 text-xl text-secondarytext'>
                 <p>Spot is a realtime data sharing platform. it works using webrtc protocoal which is fully peer to peer network.</p>
               </div>
               <div className='invisible md:visible w-full h-12 px-4 flex items-center justify-start text-lg gap-6 mb-4'>
@@ -144,20 +144,20 @@ function App() {
                 <FaReact className='text-blue-500'/>
                 <FaNodeJs className='text-green-500'/>
               </div>
-              <div className='w-full h-12 px-4 flex items-center justify-end'>
-                <a href='https://spoted.online/' target='blank'><button className='text-lg text-white rounded-lg bg-blue-500 px-10 lg:px-12 flex items-center justify-center gap-6 py-2'>Deployed url <FaArrowRightLong/></button></a>
+              <div className='w-full h-12 px-4 flex items-center justify-center lg:justify-end'>
+                <a href='https://spoted.online/' target='blank'><button className='text-lg text-white rounded-lg bg-glossyblue px-10 lg:px-12 flex items-center justify-center gap-6 py-2'>Deployed url <FaArrowRightLong/></button></a>
               </div>
             </div>
           </div>
         </div>  
         <div id="contact" className="w-full h-fit md:h-full flex items-center justify-center">
           <div className='w-5/6 lg:w-3/4 h-3/4'>
-              <div className='w-full h-12 text-blue-600 flex items-center justify-start gap-6'>
+              <div className='w-full h-12 text-glossyblue flex items-center justify-start gap-6'>
                 <FaArrowCircleRight/>
                 <h1>Contact me</h1>
               </div>
               <hr className="h-4"/>
-              <div className='w-full h-fit text-gray-500 text-xl p-4 rounded-lg mb-4'>
+              <div className='w-full h-fit text-secondarytext text-xl p-4 rounded-lg mb-4'>
                 <p className='mb-4'>Hey i really appreciate you time and effort to check out my portfolio. If you would be so kind i kindly request to say hi.</p>
                 <div className='w-full h-fit p-4 flex items-center justify-evenly flex flex-col gap-6'>
                   <input value={Email} onChange={(e)=> setEmail(e.target.value)} className='py-2 px-4 border-2 border-gray-500 outline-2 outline-blue-500 w-full lg:w-3/4 rounded-lg' placeholder='example@gmail.com'/>
@@ -165,7 +165,7 @@ function App() {
                   <button disabled={sending} onClick={()=>{
                     setSending(true)
                     sendEmail()
-                  }} className='w-2/4 py-2 rounded-lg text-white bg-blue-500 flex items-center justify-center gap-6'>
+                  }} className='w-2/4 py-2 rounded-lg text-white bg-glossyblue flex items-center justify-center gap-6'>
                     {
                       sending ? <div className='loader'></div>
                       :
@@ -192,12 +192,12 @@ function App() {
         </div>
         <div id="about" className="w-full h-fit flex items-center justify-center">
           <div className='w-5/6 lg:w-3/4 h-3/4'>
-            <div className='w-full h-12 text-blue-600 flex items-center justify-start gap-6'>
+            <div className='w-full h-12 text-glossyblue flex items-center justify-start gap-6'>
               <FaArrowCircleRight/>
               <h1>About</h1>
             </div>
             <hr className="h-4"/>
-            <div className='w-full h-fit text-gray-500 text-xl p-4 rounded-lg mb-4'>
+            <div className='w-full h-fit text-secondarytext text-xl p-4 rounded-lg mb-4'>
               <p className='mb-4'>Greetings 👋 i am yasar arafath. a passionate and results-driven software engineer with a deep love for technology and a knack for solving complex problems. As a full stack engineer, I thrive on turning innovative ideas into reality and contributing to projects that push the boundaries of whats possible.</p>
               <p className='mb-4'>I believe in the power of technology to transform lives and industries. My journey in the tech world has been marked by a relentless pursuit of excellence and a commitment to continuous learning. From coding elegant solutions to collaborating on cross-functional teams, I find joy in every step of the development process.</p>
               {/* <img src={profile} alt='profile' className='w-80 h-80'/> */}
