@@ -1,6 +1,6 @@
 import './App.css';
 import Nav from './components/Nav';
-import { FaLinkedin, FaGithub, FaReact, FaAws, FaPython, FaHtml5, FaCss3Alt, FaNodeJs, FaArrowCircleRight } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaReact, FaAws, FaPython, FaHtml5, FaCss3Alt, FaNodeJs, FaArrowCircleRight, FaGithubSquare } from "react-icons/fa";
 import { FaSquareXTwitter, FaDocker, FaArrowRightLong } from "react-icons/fa6";
 import profile from './assets/images/profile.jpeg';
 import { SiTailwindcss, SiMongodb, SiKubernetes, SiAwsamplify, SiAwslambda, SiAmazonrds } from "react-icons/si";
@@ -77,6 +77,7 @@ function App() {
               <div className='w-full h-16 flex gap-6'>
                 <a href='https://www.linkedin.com/in/yasararafathdev/' target='blank'><FaLinkedin/></a>
                 <a href='https://twitter.com/Yasararafathdev' target='blank'><FaSquareXTwitter/></a>
+                <a href='https://github.com/Yasar195' target='blank'><FaGithubSquare/></a>
               </div>
             </div>
           </div>
