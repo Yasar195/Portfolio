@@ -8,9 +8,62 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { SiExpress } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { IoMdSend } from "react-icons/io";
+import { useEffect, useState } from 'react';
 // import { LocomotiveScrollProvider } from 'react-locomotive-scrol
 
 function App() {
+
+  const [Email, setEmail] = useState("");
+  const [Message, setMessage] = useState("");
+  const [sending, setSending] = useState(false);
+  const [dialogue, setDialogue] = useState(false)
+  const [success, setSuccess] = useState(false)
+  const [failure, setFailure] = useState(false)
+
+  const sendEmail = () => {
+
+    const config = {
+      SecureToken: 'f554ff9b-0d76-4134-8787-754de5fb66b7',
+      To : 'yasar.coder@yopmail.com',
+      From : "imyasar07@gmail.com",
+      Subject : `${Email} is contacted through portfolio.`,
+      Body : `${Message}`
+    }
+
+    if(Email && Message){
+      if(window.Email){
+        window.Email.send(config).then(()=> {
+          setSending(false)
+          setEmail("")
+          setMessage("")
+          setDialogue(true)
+          setSuccess(true)
+          setTimeout(()=> {
+            setSuccess(false)
+            setDialogue(false)
+          }, 5000)
+        })
+        .catch(err=> {
+          setSending(false)
+          setDialogue(true)
+          setFailure(true)
+          setTimeout(()=> {
+            setFailure(false)
+            setDialogue(false)
+          }, 5000)
+        });
+      }
+    }
+    else{
+      setSending(false)
+      setDialogue(true)
+      setFailure(true)
+      setTimeout(()=> {
+        setFailure(false)
+        setDialogue(false)
+      }, 5000)
+    }
+  }
 
   return (
     <div className="relative w-full h-screen bg-white px-2 lg:px-6">
@@ -106,9 +159,32 @@ function App() {
               <div className='w-full h-fit text-gray-500 text-xl p-4 rounded-lg mb-4'>
                 <p className='mb-4'>Hey i really appreciate you time and effort to check out my portfolio. If you would be so kind i kindly request to say hi.</p>
                 <div className='w-full h-fit p-4 flex items-center justify-evenly flex flex-col gap-6'>
-                  <input className='py-2 px-4 border-2 border-gray-500 outline-2 outline-blue-500 w-full lg:w-3/4 rounded-lg' placeholder='example@gmail.com'/>
-                  <textarea placeholder='type something' className='p-4 border-2 border-gray-500 outline-2 outline-blue-500 w-full lg:w-3/4 h-60 rounded-lg'/>
-                  <button className='px-12 py-2 rounded-lg text-white bg-blue-500 flex items-center justify-center gap-6'>Send <IoMdSend/></button>
+                  <input value={Email} onChange={(e)=> setEmail(e.target.value)} className='py-2 px-4 border-2 border-gray-500 outline-2 outline-blue-500 w-full lg:w-3/4 rounded-lg' placeholder='example@gmail.com'/>
+                  <textarea value={Message} onChange={(e)=> setMessage(e.target.value)} placeholder='type something' className='p-4 border-2 border-gray-500 outline-2 outline-blue-500 w-full lg:w-3/4 h-60 rounded-lg'/>
+                  <button disabled={sending} onClick={()=>{
+                    setSending(true)
+                    sendEmail()
+                  }} className='w-2/4 py-2 rounded-lg text-white bg-blue-500 flex items-center justify-center gap-6'>
+                    {
+                      sending ? <div className='loader'></div>
+                      :
+                      <div className='w-full h-full flex items-center justify-center gap-6'>Send <IoMdSend/></div>
+                    }
+                  </button>
+                  {
+                    dialogue && <div className='w-full h-8 flex items-center justify-center text-white rounded-lg'>
+                      {
+                        success && <p className='px-6 lg:px-12 h-full bg-green-800 rounded-lg'>
+                          Thank you for reaching out
+                        </p>
+                      }
+                      {
+                        failure && <p className='px-6 lg:px-12 h-full bg-red-800 rounded-lg'>
+                          Failed to send email.
+                        </p>
+                      }
+                    </div>
+                  }
                 </div>
               </div>
             </div>
