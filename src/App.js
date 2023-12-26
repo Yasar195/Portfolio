@@ -199,7 +199,7 @@ function App() {
             <div className='w-full h-fit text-gray-500 text-xl p-4 rounded-lg mb-4'>
               <p className='mb-4'>Greetings 👋 i am yasar arafath. a passionate and results-driven software engineer with a deep love for technology and a knack for solving complex problems. As a full stack engineer, I thrive on turning innovative ideas into reality and contributing to projects that push the boundaries of whats possible.</p>
               <p className='mb-4'>I believe in the power of technology to transform lives and industries. My journey in the tech world has been marked by a relentless pursuit of excellence and a commitment to continuous learning. From coding elegant solutions to collaborating on cross-functional teams, I find joy in every step of the development process.</p>
-              <img src={profile} alt='profile' className='w-80 h-80'/>
+              {/* <img src={profile} alt='profile' className='w-80 h-80'/> */}
             </div>
           </div>
         </div>
