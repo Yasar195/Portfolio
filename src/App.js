@@ -2,13 +2,12 @@ import './App.css';
 import Nav from './components/Nav';
 import { FaLinkedin, FaGithub, FaReact, FaAws, FaPython, FaHtml5, FaCss3Alt, FaNodeJs, FaArrowCircleRight, FaGithubSquare } from "react-icons/fa";
 import { FaSquareXTwitter, FaDocker, FaArrowRightLong } from "react-icons/fa6";
-import profile from './assets/images/profile.jpeg';
 import { SiTailwindcss, SiMongodb, SiKubernetes, SiAwsamplify, SiAwslambda, SiAmazonrds } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiExpress } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { IoMdSend } from "react-icons/io";
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 // import { LocomotiveScrollProvider } from 'react-locomotive-scrol
 
 function App() {
@@ -66,9 +65,9 @@ function App() {
   }
 
   return (
-    <div className="relative w-full h-screen bg-white px-2 lg:px-6">
+    <div className="relative w-full h-screen bg-white scroll-container">
         <Nav/>
-        <div className="w-full h-fit md:h-full flex flex-col items-center justify-center gap-6">
+        <div className="scroll-page w-full h-fit md:h-full flex flex-col items-center justify-center gap-6 px-2 lg:px-6">
           <div className='w-3/4 h-2/4 flex flex-col lg:flex-row p-2 lg:p-6'>
             <div className='w-full h-full flex justify-center flex-col gap-6'>
               <h1 className='lg:text-7xl text-4xl'>Full Stack Web developer</h1>
@@ -99,7 +98,7 @@ function App() {
             <FaAws className='text-yellow-700'/>
           </div>
         </div>
-        <div id="projects" className="w-full h-fit flex items-center justify-center">
+        <div id="projects" className="scroll-page w-full h-fit flex items-center justify-center px-2 lg:px-6">
           <div className='w-5/6 lg:w-3/4 h-3/4'>
             <div className='w-full h-12 text-glossyblue flex items-center justify-start gap-6'>
               <FaArrowCircleRight/>
@@ -150,7 +149,7 @@ function App() {
             </div>
           </div>
         </div>  
-        <div id="contact" className="w-full h-fit md:h-full flex items-center justify-center">
+        <div id="contact" className="scroll-page w-full h-fit md:h-full flex items-center justify-center px-2 lg:px-6">
           <div className='w-5/6 lg:w-3/4 h-3/4'>
               <div className='w-full h-12 text-glossyblue flex items-center justify-start gap-6'>
                 <FaArrowCircleRight/>
@@ -190,7 +189,7 @@ function App() {
               </div>
             </div>
         </div>
-        <div id="about" className="w-full h-fit flex items-center justify-center">
+        <div id="about" className="scroll-page w-full h-fit flex items-center justify-center px-2 lg:px-6">
           <div className='w-5/6 lg:w-3/4 h-3/4'>
             <div className='w-full h-12 text-glossyblue flex items-center justify-start gap-6'>
               <FaArrowCircleRight/>
