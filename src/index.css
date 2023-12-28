@@ -6,22 +6,12 @@ body {
   margin: 0;
   font-family: 'Afacad', sans-serif;
   font-size: 30px;
+  overflow: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-/* Hide scrollbar for Chrome, Safari, and Opera */
-body::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge, and Firefox */
-body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scroll-behavior: smooth;
 }
 
 .loader {
@@ -62,12 +52,13 @@ nav,
   display: block;
   margin: 0 auto;
 }
-nav {
-  border: 1px solid black;
-}
+
 .scroll-container {
   overflow-y: scroll;
   scroll-behavior: smooth;
-  scrollbar-width: none;
   -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
 }
