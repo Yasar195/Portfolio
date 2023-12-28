@@ -53,3 +53,20 @@ body {
     75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
     100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
 }
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+nav,
+.scroll-container {
+  display: block;
+  margin: 0 auto;
+}
+nav {
+  border: 1px solid black;
+}
+.scroll-container {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
