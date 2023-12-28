@@ -67,7 +67,7 @@ function App() {
   return (
     <div className="relative w-full h-screen bg-white scroll-container">
         <Nav/>
-        <div className="scroll-page w-full h-fit md:h-full flex flex-col items-center justify-center gap-6 px-2 lg:px-6">
+        <div id="intro" className="scroll-page w-full h-fit md:h-full flex flex-col items-center justify-center gap-6 px-2 lg:px-6">
           <div className='w-3/4 h-2/4 flex flex-col lg:flex-row p-2 lg:p-6'>
             <div className='w-full h-full flex justify-center flex-col gap-6'>
               <h1 className='lg:text-7xl text-4xl'>Full Stack Web developer</h1>

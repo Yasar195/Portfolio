@@ -21,7 +21,6 @@ body::-webkit-scrollbar {
 /* Hide scrollbar for IE, Edge, and Firefox */
 body {
   -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;
   scroll-behavior: smooth;
 }
 
@@ -69,4 +68,6 @@ nav {
 .scroll-container {
   overflow-y: scroll;
   scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
