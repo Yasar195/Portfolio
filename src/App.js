@@ -205,7 +205,7 @@ function App() {
         </div>
       <div className='w-full h-60 bg-black text-white mt-16 p-10 flex items-center flex-col justify-center gap-6'>
         <h1 className="font-bold">yasararafath.dev</h1>
-        <p className='text-lg'>All rights reserved &copy; Yasar Arafath 2023</p>
+        <p className='text-lg'>All rights reserved &copy; Yasar Arafath 2024</p>
       </div>
     </div>
   );
