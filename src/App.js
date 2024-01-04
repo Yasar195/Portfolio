@@ -8,6 +8,7 @@ import { SiExpress } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { IoMdSend } from "react-icons/io";
 import { useState } from 'react';
+import Setting from './components/Settings';
 // import { LocomotiveScrollProvider } from 'react-locomotive-scrol
 
 function App() {
@@ -73,7 +74,7 @@ function App() {
               <span className='w-full h-fit flex lg:items-center justify-between gap-4 lg:gap-16 flex-col lg:flex-row'>
                 <h1 className='lg:text-7xl text-4xl'>Full Stack Web developer</h1>
                 <div className='flex h-fit flex items-center lg:justify-center gap-4'>
-                  <p className='text-lg font-bolder text-green-600'>Open to offers</p>
+                  <p className='text-lg font-bolder text-green-600'>Open to offers 🧑‍💻</p>
                   <span className='inline-block animate-pulse rounded-full p-2 bg-green-600'></span>
                 </div>
               </span>
@@ -227,6 +228,7 @@ function App() {
             </div>
           </div>
         </div>
+        <Setting/>
       <div className='w-full h-60 bg-black text-white mt-16 p-10 flex items-center flex-col justify-center gap-6'>
         <h1 className="font-bold">yasararafath.dev</h1>
         <p className='text-lg'>All rights reserved &copy; Yasar Arafath 2024</p>
