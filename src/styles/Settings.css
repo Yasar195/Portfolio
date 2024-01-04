@@ -2,8 +2,20 @@
     transition: all 0.3s ease-in-out;
 }
 
-.settings:hover{
-    transform: rotate(-90deg);
+.settings:active{
+    transform: rotate(-45deg);
+}
+
+.expand {
+    opacity: 0;
+    z-index: -1;
+    transform: translateX(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.expand.view {
+    opacity: 1;
+    transform: translateX(-20px);
 }
 
 @keyframes rotate {
