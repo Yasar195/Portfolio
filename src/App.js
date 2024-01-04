@@ -70,7 +70,13 @@ function App() {
         <div id="intro" className="scroll-page w-full h-fit md:h-full flex flex-col items-center justify-center gap-6 px-2 lg:px-6">
           <div className='w-3/4 h-2/4 flex flex-col lg:flex-row p-2 lg:p-6'>
             <div className='w-full h-full flex justify-center flex-col gap-6'>
-              <h1 className='lg:text-7xl text-4xl'>Full Stack Web developer</h1>
+              <span className='w-full h-fit flex lg:items-center justify-between gap-4 lg:gap-16 flex-col lg:flex-row'>
+                <h1 className='lg:text-7xl text-4xl'>Full Stack Web developer</h1>
+                <div className='flex h-fit flex items-center lg:justify-center gap-4'>
+                  <p className='text-lg font-bolder text-green-600'>Open to offers</p>
+                  <span className='inline-block animate-pulse rounded-full p-2 bg-green-600'></span>
+                </div>
+              </span>
               <p className='text-xl text-secondarytext'>🚀 Hi, I'm yasar arafath—a tech enthusiast and software engineer. From lines of code to innovative solutions, I'm on a mission to blend creativity with technology. With expertise in front end, backend and databases, I bring a dynamic approach to problem-solving and a passion for turning ideas into reality. Let's build something amazing together!</p>
               <p className='text-xl text-glossyblue'>Lets Connect 🚀!</p>
               <div className='w-full h-16 flex gap-6'>
@@ -81,21 +87,39 @@ function App() {
             </div>
           </div>
           <h1 className='invisible lg:visible text-base hidden lg:block'>TECH STACK</h1>
-          <div className='invisible lg:visible w-full h-fit p-6 flex items-center justify-center gap-10'>
-            <FaHtml5 className='text-orange-500'/>
-            <FaCss3Alt className='text-blue-500'/>
-            <IoLogoJavascript className='text-yellow-500'/>
-            <FaPython className='text-blue-800'/>
-            <FaReact className='text-blue-500'/>
-            <SiTailwindcss className='text-blue-400'/>
-            <SiExpress/>
-            <FaNodeJs className='text-green-500'/>
-            <FaGithub />
-            <BiLogoPostgresql className='text-blue-900'/>
-            <SiMongodb className='text-green-600'/>
-            <FaDocker className='text-blue-500'/>
-            <SiKubernetes className='text-blue-800'/>
-            <FaAws className='text-yellow-700'/>
+          <div className='w-3/4 flex overflow-hidden space-x-2'>
+            <div className='invisible lg:visible inline-block  w-full h-fit p-6 flex space-x-2 items-center justify-center gap-10 animate-loop-scroll'>
+              <FaHtml5 className='text-orange-500'/>
+              <FaCss3Alt className='text-blue-500'/>
+              <IoLogoJavascript className='text-yellow-500'/>
+              <FaPython className='text-blue-800'/>
+              <FaReact className='text-blue-500'/>
+              <SiTailwindcss className='text-blue-400'/>
+              <SiExpress/>
+              <FaNodeJs className='text-green-500'/>
+              <FaGithub />
+              <BiLogoPostgresql className='text-blue-900'/>
+              <SiMongodb className='text-green-600'/>
+              <FaDocker className='text-blue-500'/>
+              <SiKubernetes className='text-blue-800'/>
+              <FaAws className='text-yellow-700'/>
+            </div>
+            <div className='invisible lg:visible inline-block  w-full h-fit p-6 flex space-x-2 items-center justify-center gap-10 animate-loop-scroll' aria-hidden="true">
+              <FaHtml5 className='text-orange-500'/>
+              <FaCss3Alt className='text-blue-500'/>
+              <IoLogoJavascript className='text-yellow-500'/>
+              <FaPython className='text-blue-800'/>
+              <FaReact className='text-blue-500'/>
+              <SiTailwindcss className='text-blue-400'/>
+              <SiExpress/>
+              <FaNodeJs className='text-green-500'/>
+              <FaGithub />
+              <BiLogoPostgresql className='text-blue-900'/>
+              <SiMongodb className='text-green-600'/>
+              <FaDocker className='text-blue-500'/>
+              <SiKubernetes className='text-blue-800'/>
+              <FaAws className='text-yellow-700'/>
+            </div>
           </div>
         </div>
         <div id="projects" className="scroll-page w-full h-fit flex items-center justify-center px-2 lg:px-6">
@@ -125,7 +149,7 @@ function App() {
                 <SiAmazonrds className='text-violet-500'/>
               </div>
               <div className='w-full h-12 px-4 flex items-center justify-center lg:justify-end'>
-                <a href='https://easy-auth.vercel.app/' target='blank'><button className='text-lg text-white rounded-lg bg-glossyblue px-10 lg:px-12 flex items-center justify-center gap-6 py-2'>Deployed url <FaArrowRightLong/></button></a>
+                <a href='https://easy-auth.vercel.app/' target='blank'><button className='text-lg text-white rounded-lg bg-glossyblue px-10 lg:px-12 flex items-center justify-center gap-6 py-2'>Checkout <FaArrowRightLong/></button></a>
               </div>
             </div>
             <div className='w-full h-fit border-2 border-gray-100 p-4 rounded-lg mb-4'>
@@ -144,7 +168,7 @@ function App() {
                 <FaNodeJs className='text-green-500'/>
               </div>
               <div className='w-full h-12 px-4 flex items-center justify-center lg:justify-end'>
-                <a href='https://spoted.online/' target='blank'><button className='text-lg text-white rounded-lg bg-glossyblue px-10 lg:px-12 flex items-center justify-center gap-6 py-2'>Deployed url <FaArrowRightLong/></button></a>
+                <a href='https://spoted.online/' target='blank'><button className='text-lg text-white rounded-lg bg-glossyblue px-10 lg:px-12 flex items-center justify-center gap-6 py-2'>Checkout <FaArrowRightLong/></button></a>
               </div>
             </div>
           </div>
@@ -157,7 +181,7 @@ function App() {
               </div>
               <hr className="h-4"/>
               <div className='w-full h-fit text-secondarytext text-xl p-4 rounded-lg mb-4'>
-                <p className='mb-4'>Hey i really appreciate you time and effort to check out my portfolio. If you would be so kind i kindly request to say hi.</p>
+                <p className='mb-4'>Hey i really appreciate your time and effort to check out my portfolio. If you would be so kind i kindly request to say hi.</p>
                 <div className='w-full h-fit p-4 flex items-center justify-evenly flex flex-col gap-6'>
                   <input value={Email} onChange={(e)=> setEmail(e.target.value)} className='py-2 px-4 border-2 border-gray-500 outline-2 outline-blue-500 w-full lg:w-3/4 rounded-lg' placeholder='example@gmail.com'/>
                   <textarea value={Message} onChange={(e)=> setMessage(e.target.value)} placeholder='type something' className='p-4 border-2 border-gray-500 outline-2 outline-blue-500 w-full lg:w-3/4 h-60 rounded-lg'/>
