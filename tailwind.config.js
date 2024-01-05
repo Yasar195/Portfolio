@@ -3,11 +3,13 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
         'glossyblue': '#0D5BE1',
-        'secondarytext': '#475569'
+        'secondarytext': '#475569',
+        'secondarytextdark': '#E5E7EB'
       },
       animation: {
         "loop-scroll": "loop-scroll 50s linear infinite",
