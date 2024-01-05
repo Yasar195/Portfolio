@@ -22,6 +22,7 @@ function App() {
   const [success, setSuccess] = useState(false)
   const [failure, setFailure] = useState(false)
   const [themeMode, setThememode] = useState("dark")
+  const [firstLoad, setFirstLoad] = useState(true)
 
   const sendEmail = () => {
 
@@ -77,8 +78,23 @@ function App() {
   }
 
   useEffect(()=> {
-    document.documentElement.classList.remove('dark', 'light');
-    document.documentElement.classList.add(themeMode)
+    if(firstLoad){
+      const prevtheme = localStorage.getItem('theme');
+      if(prevtheme){
+        document.documentElement.classList.add(prevtheme)
+        setFirstLoad(false)
+        setThememode(prevtheme)
+      }
+      else{
+        setFirstLoad(false)
+        setThememode('light');
+      }
+    }
+    else{
+      document.documentElement.classList.remove('dark', 'light');
+      document.documentElement.classList.add(themeMode)
+      localStorage.setItem('theme', themeMode);
+    }
   }, [themeMode])
 
   return (
