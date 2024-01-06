@@ -11,6 +11,7 @@ import { useEffect, useState } from 'react';
 import Setting from './components/Settings';
 import Project from './components/Poject';
 import { ThemeProvider } from './context/theme';
+import { FaHashnode } from "react-icons/fa6";
 // import { LocomotiveScrollProvider } from 'react-locomotive-scrol
 
 function App() {
@@ -113,10 +114,15 @@ function App() {
                 </span>
                 <p className='text-xl text-secondarytext dark:text-secondarytextdark'>🚀 Hi, I'm yasar arafath—a tech enthusiast and software engineer. From lines of code to innovative solutions, I'm on a mission to blend creativity with technology. With expertise in front end, backend and databases, I bring a dynamic approach to problem-solving and a passion for turning ideas into reality. Let's build something amazing together!</p>
                 <p className='text-xl text-glossyblue'>Lets Connect 🚀!</p>
-                <div className='w-full h-16 flex gap-6 dark:text-secondarytextdark'>
-                  <a href='https://www.linkedin.com/in/yasararafathdev/' target='blank'><FaLinkedin/></a>
-                  <a href='https://twitter.com/Yasararafathdev' target='blank'><FaSquareXTwitter/></a>
-                  <a href='https://github.com/Yasar195' target='blank'><FaGithubSquare/></a>
+                <div className='w-full h-16 flex flex-col gap-6 xl:flex-row xl:gap-0 dark:text-secondarytextdark'>
+                  <div className='w-1/6 h-full flex items-center gap-6'>
+                    <a href='https://www.linkedin.com/in/yasararafathdev/' target='blank'><FaLinkedin/></a>
+                    <a href='https://twitter.com/Yasararafathdev' target='blank'><FaSquareXTwitter/></a>
+                    <a href='https://github.com/Yasar195' target='blank'><FaGithubSquare/></a>
+                  </div>
+                  <div className='w-5/6 h-full flex items-center gap-6'>
+                    <a href='https://iamyasar.hashnode.dev/' target='blank'><button className='text-base flex items-center gap-4 bg-glossyblue px-6 py-2 text-white rounded-lg'>Blog <FaHashnode/></button></a>
+                  </div>
                 </div>
               </div>
             </div>
