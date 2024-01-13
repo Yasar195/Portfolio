@@ -11,7 +11,6 @@ const Thoughts = () => {
     useEffect(()=> {
         axios.get('https://2l7ku69a2g.execute-api.ap-south-1.amazonaws.com')
         .then((response)=> {
-            console.log(response.data)
             setThoughts([...response.data.thoughts])
             setLoad(false)
         })
@@ -24,7 +23,7 @@ const Thoughts = () => {
                     <h1 className="text-base">Loading...</h1>
                 </div>
                 :
-                thoughts.length===0? <div className="w-full h-20 flex items-center justify-center">
+                thoughts.length===0? <div className="text-base w-full h-20 flex items-center justify-center">
                     <h1>Hmm i have no thoughts now 🤔.</h1>
                 </div>
                 :

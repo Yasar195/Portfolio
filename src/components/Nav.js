@@ -10,6 +10,7 @@ const Nav = () => {
                 <p className="hover:cursor-pointer rounded-full hover:text-glossyblue"><a href="#projects">Projects</a></p>
                 <p className="hover:cursor-pointer rounded-full hover:text-glossyblue"><a href="#contact">Contact</a></p>
                 <p className="hover:cursor-pointer rounded-full hover:text-glossyblue"><a href="#about">About</a></p>
+                <p className="hover:cursor-pointer rounded-full hover:text-glossyblue"><a href="#feed">Feed</a></p>
             </div>
         </div>
     )

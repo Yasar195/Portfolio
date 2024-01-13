@@ -13,6 +13,9 @@ import Project from './components/Poject';
 import Thoughts from './components/Thoughts';
 import { ThemeProvider } from './context/theme';
 import { FaHashnode } from "react-icons/fa6";
+import { BsTwitterX, BsInstagram, BsGithub, BsLinkedin } from "react-icons/bs";
+
+
 // import { LocomotiveScrollProvider } from 'react-locomotive-scrol
 
 function App() {
@@ -226,15 +229,30 @@ function App() {
                 <p className='mb-4'>I believe in the power of technology to transform lives and industries. My journey in the tech world has been marked by a relentless pursuit of excellence and a commitment to continuous learning. From coding elegant solutions to collaborating on cross-functional teams, I find joy in every step of the development process.</p>
                 {/* <img src={profile} alt='profile' className='w-80 h-80'/> */}
               </div>
-              <h1 className='text-glossyblue font-bold'>Feed</h1>
+            </div>
+          </div>
+          <div id="feed" className="scroll-page w-full h-fit flex items-center justify-center px-2 lg:px-6">
+            <div className='w-5/6 lg:w-3/4 h-3/4'>
+              <div className='w-full h-12 text-glossyblue flex items-center justify-start gap-6'>
+                <FaArrowCircleRight/>
+                <h1 className='font-bold'>Feed</h1>
+              </div>
               <hr className="h-4"/>
               <p className='text-secondarytext dark:text-secondarytextdark text-xl p-4 rounded-lg mb-4'>Catch me realtime here 😁.</p>
               <Thoughts/>
             </div>
           </div>
-          <Setting/>
-        <div className='w-full h-60 bg-black text-white mt-16 p-10 flex items-center flex-col justify-center gap-6'>
+          <Setting classList="bg-black"/>
+        <div className='w-full h-80 bg-black text-white mt-16 p-10 flex items-center flex-col justify-center gap-6'>
           <h1 className="font-bold">yasararafath.dev</h1>
+          <p className='text-base'>Socials</p>
+          <div className='w-full h-20 text-white flex items-center justify-center gap-8 text-lg'>
+            <BsTwitterX />
+            <BsInstagram />
+            <BsGithub />
+            <BsLinkedin/>
+            <FaHashnode />
+          </div>
           <p className='text-lg'>All rights reserved &copy; Yasar Arafath 2024</p>
         </div>
       </div>
