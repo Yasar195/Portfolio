@@ -10,6 +10,7 @@ import { IoMdSend } from "react-icons/io";
 import { useEffect, useState } from 'react';
 import Setting from './components/Settings';
 import Project from './components/Poject';
+import Thoughts from './components/Thoughts';
 import { ThemeProvider } from './context/theme';
 import { FaHashnode } from "react-icons/fa6";
 // import { LocomotiveScrollProvider } from 'react-locomotive-scrol
@@ -166,7 +167,7 @@ function App() {
             <div className='w-5/6 lg:w-3/4 h-3/4'>
               <div className='w-full h-12 text-glossyblue flex items-center justify-start gap-6'>
                 <FaArrowCircleRight/>
-                <h1>Projects</h1>
+                <h1 className='font-bold'>Projects</h1>
               </div>
               <hr className="h-4 dark:border-gray-700"/>
               <Project number={'1'} name={"Easy Auth"} description={"Easy auth or Easy authentication/authorization is saas service aimed at developers who are finding it difficult to integrate jwt authentication in their projects."} techs={[<FaReact className='text-blue-500'/>, <FaNodeJs className='text-green-500'/>, <BiLogoPostgresql className='text-blue-900'/>, <SiAwsamplify className='text-red-700'/>, <SiAwslambda className='text-orange-500'/>, <SiAmazonrds className='text-violet-500'/>]} url={'https://easy-auth.vercel.app/'}/>
@@ -177,7 +178,7 @@ function App() {
             <div className='w-5/6 lg:w-3/4 h-3/4'>
                 <div className='w-full h-12 text-glossyblue flex items-center justify-start gap-6'>
                   <FaArrowCircleRight/>
-                  <h1>Contact me</h1>
+                  <h1 className='font-bold'>Contact me</h1>
                 </div>
                 <hr className="h-4"/>
                 <div className='w-full h-fit text-secondarytext text-xl p-4 rounded-lg mb-4'>
@@ -217,7 +218,7 @@ function App() {
             <div className='w-5/6 lg:w-3/4 h-3/4'>
               <div className='w-full h-12 text-glossyblue flex items-center justify-start gap-6'>
                 <FaArrowCircleRight/>
-                <h1>About</h1>
+                <h1 className='font-bold'>About</h1>
               </div>
               <hr className="h-4"/>
               <div className='w-full h-fit text-secondarytext dark:text-secondarytextdark text-xl p-4 rounded-lg mb-4'>
@@ -225,6 +226,10 @@ function App() {
                 <p className='mb-4'>I believe in the power of technology to transform lives and industries. My journey in the tech world has been marked by a relentless pursuit of excellence and a commitment to continuous learning. From coding elegant solutions to collaborating on cross-functional teams, I find joy in every step of the development process.</p>
                 {/* <img src={profile} alt='profile' className='w-80 h-80'/> */}
               </div>
+              <h1 className='text-glossyblue font-bold'>Feed</h1>
+              <hr className="h-4"/>
+              <p className='text-secondarytext dark:text-secondarytextdark text-xl p-4 rounded-lg mb-4'>Catch me realtime here 😁.</p>
+              <Thoughts/>
             </div>
           </div>
           <Setting/>
