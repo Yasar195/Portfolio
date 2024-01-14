@@ -13,7 +13,7 @@ const Project = ({ number, name, description, techs, url }) => {
               <div className='w-full h-fit px-4 pb-4 text-xl text-secondarytext dark:text-secondarytextdark'>
                 <p>{description}</p>
               </div>
-              <div className='invisible md:visible w-full h-12 px-4 flex items-center justify-start text-xl gap-6 mb-4 dark:text-white'>
+              <div className='hidden md:flex w-full h-12 px-4 flex items-center justify-start text-xl gap-6 mb-4 dark:text-white'>
                 <h1>Technologies:-</h1>
                 {
                     techs.map((skill, index)=><div key={index}>{skill}</div>)

@@ -227,7 +227,6 @@ function App() {
               <div className='w-full h-fit text-secondarytext dark:text-secondarytextdark text-xl p-4 rounded-lg mb-4'>
                 <p className='mb-4'>Greetings 👋 i am yasar arafath. a passionate and results-driven software engineer with a deep love for technology and a knack for solving complex problems. As a full stack engineer, I thrive on turning innovative ideas into reality and contributing to projects that push the boundaries of whats possible.</p>
                 <p className='mb-4'>I believe in the power of technology to transform lives and industries. My journey in the tech world has been marked by a relentless pursuit of excellence and a commitment to continuous learning. From coding elegant solutions to collaborating on cross-functional teams, I find joy in every step of the development process.</p>
-                {/* <img src={profile} alt='profile' className='w-80 h-80'/> */}
               </div>
             </div>
           </div>
@@ -242,16 +241,14 @@ function App() {
               <Thoughts/>
             </div>
           </div>
-          <Setting classList="bg-black"/>
+          <Setting />
         <div className='w-full h-80 bg-black text-white mt-16 p-10 flex items-center flex-col justify-center gap-6'>
           <h1 className="font-bold">yasararafath.dev</h1>
-          <p className='text-base'>Socials</p>
           <div className='w-full h-20 text-white flex items-center justify-center gap-8 text-lg'>
-            <BsTwitterX />
-            <BsInstagram />
-            <BsGithub />
-            <BsLinkedin/>
-            <FaHashnode />
+            <a href='https://twitter.com/Yasararafathdev' target='blank'><BsTwitterX /></a>
+            <a href='https://github.com/Yasar195' target='blank'><BsGithub /></a>
+            <a href='https://www.linkedin.com/in/yasararafathdev/' target='blank'><BsLinkedin/></a>
+            <a href='https://iamyasar.hashnode.dev/' target='blank'><FaHashnode /></a>
           </div>
           <p className='text-lg'>All rights reserved &copy; Yasar Arafath 2024</p>
         </div>
