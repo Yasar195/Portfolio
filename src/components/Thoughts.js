@@ -9,9 +9,13 @@ const Thoughts = () => {
     const [thoughts, setThoughts] = useState([])
 
     useEffect(()=> {
-        axios.get('https://2l7ku69a2g.execute-api.ap-south-1.amazonaws.com')
+        axios.get('https://5kp6ifla0b.execute-api.ap-south-1.amazonaws.com/')
         .then((response)=> {
             setThoughts([...response.data.thoughts])
+            setLoad(false)
+        })
+        .catch(()=> {
+            setThoughts([])
             setLoad(false)
         })
     }, [])
