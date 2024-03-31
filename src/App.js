@@ -174,7 +174,7 @@ function App() {
               </div>
               <hr className="h-4 dark:border-gray-700"/>
               <Project number={'1'} name={"Easy Auth"} description={"Easy auth or Easy authentication/authorization is saas service aimed at developers who are finding it difficult to integrate jwt authentication in their projects."} techs={[<FaReact className='text-blue-500'/>, <FaNodeJs className='text-green-500'/>, <BiLogoPostgresql className='text-blue-900'/>, <SiAwsamplify className='text-red-700'/>, <SiAwslambda className='text-orange-500'/>, <SiAmazonrds className='text-violet-500'/>]} url={'https://easy-auth.vercel.app/'}/>
-              <Project number={'2'} name={'Spot - A peer to peer data transfer system'} description={'Spot is a realtime data sharing platform. it works using webrtc protocoal which is fully peer to peer network.'} techs={[<FaReact className='text-blue-500'/>, <FaNodeJs className='text-green-500'/>]} url={'https://spoted.online/'}/>
+              <Project number={'2'} name={'Spot - A peer to peer data transfer system'} description={'Spot is a realtime data sharing platform. it works using webrtc protocoal which is fully peer to peer network.'} techs={[<FaReact className='text-blue-500'/>, <FaNodeJs className='text-green-500'/>]} url={'https://spoted.vercel.app/'}/>
             </div>
           </div>  
           <div id="contact" className="scroll-page w-full h-fit md:h-full flex items-center justify-center px-2 lg:px-6">
